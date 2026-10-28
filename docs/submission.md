@@ -19,8 +19,10 @@ The controller consists of:
 ## Repository additions
 
 - README, setup guide, and implementation notes.
+- Readable pseudocode for the report's six numbered algorithms and an additional reactive follower summary.
 - A convenience launch wrapper for the existing two executables and standalone follower.
 - Original architecture, simulation, and physical-robot figures extracted from the report.
+- An SVG display wrapper places the original architecture image on an opaque white canvas so its black arrows and labels remain visible in light and dark themes.
 - A public report copy with a replacement title page omitting the university identifier. The remaining 12 pages retain the original content.
 - Ignore rules for environments, build outputs, logs, and caches.
 

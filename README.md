@@ -4,7 +4,7 @@ Autonomous indoor exploration and mapping with a TurtleBot3, combining frontier 
 
 **Stack:** ROS 2 Jazzy · Python · TurtleBot3 · Cartographer · Gazebo · NumPy · Matplotlib
 
-[Project report](docs/report/mobile-robotics-report.pdf) · [Setup and running](docs/setup.md) · [Implementation notes](docs/implementation-notes.md)
+[Project report](docs/report/mobile-robotics-report.pdf) · [Algorithm pseudocode](docs/algorithms.md) · [Setup and running](docs/setup.md) · [Implementation notes](docs/implementation-notes.md)
 
 [![TurtleBot3 Burger and Waffle Pi hardware reference from ROBOTIS](https://emanual.robotis.com/assets/images/platform/turtlebot3/hardware_setup/turtlebot3_models.png)](https://emanual.robotis.com/docs/en/platform/turtlebot3/features/)
 
@@ -24,9 +24,19 @@ The custom work is organized into three ROS 2 nodes. Cartographer provides SLAM;
 | A* planner | Find a route to the selected frontier | Eight-connected grid search, nearby goal candidates, partial-route fallback, line-of-sight shortcutting, moving-average smoothing |
 | Path follower | Execute the route and react to obstacles | Waypoint tracking, LiDAR sector checks, avoidance states, progress monitoring, replanning and next-frontier requests |
 
-[![Hybrid controller architecture from the project report](docs/assets/architecture.png)](docs/report/mobile-robotics-report.pdf)
+[![Hybrid controller architecture from the project report, displayed on a white canvas for readability in light and dark themes](docs/assets/architecture.svg)](docs/report/mobile-robotics-report.pdf)
 
 The **deliberative layer** selects frontiers and plans global routes. The **reactive layer** uses current LiDAR measurements to turn away from nearby obstacles, attempt to rejoin the route, and request recovery when progress stalls.
+
+### Algorithm pseudocode
+
+The [algorithm guide](docs/algorithms.md) presents the six numbered algorithms from the project report as readable pseudocode, plus a summary of the reactive path follower derived from the report and source.
+
+| Stage | Pseudocode |
+| --- | --- |
+| Frontier goal selection | [Exploration loop, frontier candidates, and goal ranking](docs/algorithms.md#frontier-exploration) |
+| Path planning and smoothing | [Planner events, planning pipeline, and A* candidate search](docs/algorithms.md#global-path-planning) |
+| Path tracking and obstacle avoidance | [Reactive follower summary](docs/algorithms.md#reactive-path-follower) |
 
 ### ROS interfaces
 
@@ -97,8 +107,9 @@ src/
 launch/
 └── exploration.launch.py          # Added convenience launcher
 docs/
-├── assets/                       # Original figures extracted from the report
+├── assets/                       # Report figures and a theme-safe diagram wrapper
 ├── report/                       # Public copy of the project report
+├── algorithms.md                 # Report pseudocode and reactive follower summary
 ├── setup.md
 ├── implementation-notes.md
 └── submission.md                 # Source provenance and SHA-256 checksums
