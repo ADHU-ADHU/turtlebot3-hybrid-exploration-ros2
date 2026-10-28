@@ -1,0 +1,104 @@
+{
+  "source_archive": "src.zip",
+  "source_archive_sha256": "387370876b1331ee4e61f8a2652ef32e2b3aa86c025bbd013c88542d199ab95c",
+  "omitted": [
+    "__pycache__ directories and compiled Python bytecode"
+  ],
+  "files": [
+    {
+      "path": "src/astar_planner/astar_planner/frontier_astar_planner.py",
+      "sha256": "25bc3f7d3681f98ceffd83d3d20276e81fbc2aa82c9cfedb46576849e003b01c",
+      "bytes": 25777
+    },
+    {
+      "path": "src/astar_planner/astar_planner/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "src/astar_planner/package.xml",
+      "sha256": "1efbc3767b4ba32cb211d1199c18621f563275862103dc0a809b193d50199a24",
+      "bytes": 912
+    },
+    {
+      "path": "src/astar_planner/resource/astar_planner",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "src/astar_planner/setup.cfg",
+      "sha256": "104b16e794b9d1efb0b3778d20e72bd32f0ddb92cc25aeddd6b25c605cdac3ba",
+      "bytes": 95
+    },
+    {
+      "path": "src/astar_planner/setup.py",
+      "sha256": "74779a95e8fe4485accde5c31c3e3be458364585d360de25fcc386f6b7b9883a",
+      "bytes": 772
+    },
+    {
+      "path": "src/astar_planner/test/test_copyright.py",
+      "sha256": "ea71bbbc6247b5c14d176ed09f39ee274d563cc9b2ec355828ea451ceff31757",
+      "bytes": 962
+    },
+    {
+      "path": "src/astar_planner/test/test_flake8.py",
+      "sha256": "37a813a0507f0ce51a2d0b57312d2cc078a0307a3ca85580ea801b0d2f9755d2",
+      "bytes": 884
+    },
+    {
+      "path": "src/astar_planner/test/test_pep257.py",
+      "sha256": "e8b88d49ee296987b1b40069f81019b5fa09b1aa1bfee9a1faae45bb5cf53eda",
+      "bytes": 803
+    },
+    {
+      "path": "src/frontier_explorer/frontier_explorer/frontier_explorer_node.py",
+      "sha256": "a4fb2f9906e4e5e9a7e51e17c105b158877023fedd762d26f0a0fa691f10eb14",
+      "bytes": 23815
+    },
+    {
+      "path": "src/frontier_explorer/frontier_explorer/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "src/frontier_explorer/package.xml",
+      "sha256": "6b5f3c1cbd96956a4daf2f44b06f8e96d6dfdc4f74a1d8c5a956c14ce9752587",
+      "bytes": 1079
+    },
+    {
+      "path": "src/frontier_explorer/resource/frontier_explorer",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "src/frontier_explorer/setup.cfg",
+      "sha256": "dfac2f114bf0c931fbe78f7d01d21e3223bb4b1349fb7127e439022f9c1b9e53",
+      "bytes": 103
+    },
+    {
+      "path": "src/frontier_explorer/setup.py",
+      "sha256": "378089a5aafd98f47f10fe6593dfd57990a6eab9ecbfac79eee98dfe7a8778bb",
+      "bytes": 788
+    },
+    {
+      "path": "src/frontier_explorer/test/test_copyright.py",
+      "sha256": "ea71bbbc6247b5c14d176ed09f39ee274d563cc9b2ec355828ea451ceff31757",
+      "bytes": 962
+    },
+    {
+      "path": "src/frontier_explorer/test/test_flake8.py",
+      "sha256": "37a813a0507f0ce51a2d0b57312d2cc078a0307a3ca85580ea801b0d2f9755d2",
+      "bytes": 884
+    },
+    {
+      "path": "src/frontier_explorer/test/test_pep257.py",
+      "sha256": "e8b88d49ee296987b1b40069f81019b5fa09b1aa1bfee9a1faae45bb5cf53eda",
+      "bytes": 803
+    },
+    {
+      "path": "src/pathfollower_new555.py",
+      "sha256": "627d9bb7f172b6fcc5f41fad3229b6d98f1095dd08521020510fa4347b8a00bd",
+      "bytes": 28486
+    }
+  ]
+}
